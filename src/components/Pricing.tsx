@@ -18,8 +18,9 @@ const Pricing: React.FC<PricingProps> = ({ onPurchase }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onPurchase();
+    /* onPurchase(); */
     // Em uma implementação real, aqui seria feita a integração com gateway de pagamento
+    window.location.href = "https://pay.kirvano.com/ff112555-731d-4d2d-8364-908866d347db";
   };
 
   return (
